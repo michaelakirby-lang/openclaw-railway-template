@@ -1,6 +1,6 @@
-RUN echo "USING CUSTOM DOCKERFILE BUILD"
-
 FROM node:22-slim
+
+RUN echo "USING CUSTOM DOCKERFILE BUILD"
 
 RUN apt-get update && apt-get install -y git curl procps python3 make g++ cron tini && rm -rf /var/lib/apt/lists/*
 
