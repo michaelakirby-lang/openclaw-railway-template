@@ -14,6 +14,8 @@ ENV ALPHACLAW_ROOT_DIR=/data
 
 RUN mkdir -p /data
 
+COPY env-guard.js /app/env-guard.js
+
 EXPOSE 3000
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
