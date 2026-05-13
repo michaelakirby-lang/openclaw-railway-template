@@ -17,4 +17,4 @@ RUN mkdir -p /data
 EXPOSE 3000
 
 ENTRYPOINT ["/usr/bin/tini", "--"]
-CMD ["node", "bin/alphaclaw.js", "start"]
+CMD ["node", "node_modules/@chrysb/alphaclaw/bin/alphaclaw.js", "start"]
